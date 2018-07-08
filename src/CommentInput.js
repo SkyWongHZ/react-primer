@@ -18,8 +18,11 @@ class CommentInput extends Component {
       content:e.target.value
     })
   }
+  // handleSubmit=()=>{
+  //   console.log('this.props.test',this.props.test)
+  // }
   componentDidMount(){
-    console.log('this.props.test',this.props.test)
+    // console.log('this.props.test',this.props.test)
   }
   render() {
     // console.log(this.props.handleSubmit)
@@ -38,7 +41,7 @@ class CommentInput extends Component {
           </div>
         </div>
         <div className='comment-field-button'>
-          <button onClick={this.props.handleSubmit}>
+          <button onClick={()=>this.props.handleSubmit({userName:this.state.userName,content:this.state.content})}>
             发布
           </button>
         </div>
