@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './BlackBorderContainer.css'
 
 class BlackBorderContainer extends Component {
   constructor() {
@@ -8,12 +9,11 @@ class BlackBorderContainer extends Component {
     }
   }
   render() {
-    // console.log('this.props.children', this.props.children)
-    // console.log('this.props.content',this.props.content)
+    console.log('this.props.children', this.props.children)
     return (
-      <div>
-        {this.props.content}}
-      </div>
+        <div className="BlackBorderContainer-black">
+          {this.props.children}
+        </div>
     )
   }
 }

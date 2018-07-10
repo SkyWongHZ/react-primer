@@ -11,18 +11,13 @@ class BlackBorderFather extends Component {
   render() {
     return (
       <div>
-        <p>111</p>
-        <BlackBorderContainer
-          content={
-            <div>
-              <div className='name'>My Name：Lucy</div>
-              <p className='age'>
-                My Age：<span>12</span>
-              </p>
-            </div>
-
-          }
-        >
+        <BlackBorderContainer>
+          <div>
+            <div className='name'>My Name：Lucy</div>
+            <p className='age'>
+              My Age：<span>12</span>
+            </p>
+          </div>
         </BlackBorderContainer>
       </div>
 

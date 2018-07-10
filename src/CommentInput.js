@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class CommentInput extends Component {
+  static propTypes = {
+    handleSubmit: PropTypes.func
+  }
+
   constructor(){
     super()
     this.state={
@@ -23,6 +28,7 @@ class CommentInput extends Component {
   // }
   componentDidMount(){
     // console.log('this.props.test',this.props.test)
+    this.textareaValue.focus()
   }
   render() {
     // console.log(this.props.handleSubmit)
@@ -37,7 +43,7 @@ class CommentInput extends Component {
         <div className='comment-field'>
           <span className='comment-field-name'>评论内容：</span>
           <div className='comment-field-input'>
-            <textarea value={this.state.content} onChange={this.handleContentChange} />
+            <textarea   value={this.state.content} onChange={this.handleContentChange} ref={textareaValue=>this.textareaValue=textareaValue}/>
           </div>
         </div>
         <div className='comment-field-button'>

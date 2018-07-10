@@ -10,18 +10,18 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-// import  CommentApp from './CommentApp'
+import  CommentApp from './CommentApp'
 // import  Header from './Header'
 // import  IndexCom from './IndexCom'
 // import  AutoFocusInput from './AutoFocusInput'
 // import  Clock from './Clock'
 // import CommentInput from './CommentInput'
-import BlackBorderFather from './BlackBorderFather'
+// import BlackBorderFather from './BlackBorderFather'
 
 import './index.css'
 
 ReactDOM.render(
-  // < CommentApp />,
-  <BlackBorderFather/>,
+  < CommentApp />,
+  // <BlackBorderFather/>,
   document.getElementById('root')
 )
