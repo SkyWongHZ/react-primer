@@ -11,6 +11,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import  CommentApp from './CommentApp'
+import  Index from './ContextUsage/Index'
 // import  Header from './Header'
 // import  IndexCom from './IndexCom'
 // import  AutoFocusInput from './AutoFocusInput'
@@ -21,7 +22,7 @@ import  CommentApp from './CommentApp'
 import './index.css'
 
 ReactDOM.render(
-  < CommentApp />,
+  < Index />,
   // <BlackBorderFather/>,
   document.getElementById('root')
 )
