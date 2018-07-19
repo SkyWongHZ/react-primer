@@ -14,9 +14,9 @@ class Header extends Component {
   render() {
     return (
       <div style={{color:'red'}}>
-        这是头部内容
+        这是头部内容信息
       </div>
-    )
+    ) 
 
   }
 }
