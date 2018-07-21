@@ -15,6 +15,7 @@ class Header extends Component {
     return (
       <div style={{color:'red'}}>
         这是头部内容
+        <p>xxx</p>
       </div>
     ) 
 
