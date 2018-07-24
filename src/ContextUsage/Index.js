@@ -11,7 +11,8 @@ class Index extends Component {
   constructor() {
     super()
     this.state = {
-      themeColor:'green'
+      themeColor:'green',
+      color:'blue',
     }
   }
   getChildContext(){
