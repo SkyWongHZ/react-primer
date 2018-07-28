@@ -13,6 +13,7 @@ class BlackBorderContainer extends Component {
     return (
         <div className="BlackBorderContainer-black">
           {this.props.children}
+          学习下
         </div>
     )
   }
