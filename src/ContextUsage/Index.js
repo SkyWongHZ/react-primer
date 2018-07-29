@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Container from './Container'
 import Footer from './Footer'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 class Index extends Component {
-  static childContextTypes={
-    themeColor:PropTypes.string
+  static childContextTypes = {
+    themeColor: PropTypes.string
   }
   constructor() {
     super()
@@ -15,8 +15,9 @@ class Index extends Component {
       color:'blue',
     }
   }
-  getChildContext(){
-    return{themeColor:this.state.themeColor}
+
+  getChildContext= ()=> {
+    return { themeColor: this.state.themeColor }
   }
   render() {
     return (

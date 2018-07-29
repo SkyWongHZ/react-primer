@@ -11,11 +11,11 @@ class Header extends Component {
 
     }
   }
+
   render() {
     return (
-      <div style={{color:'red'}}>
-        这是头部内容看看
-        <p>xxx</p>
+      <div style={{color:this.context.themeColor }}>
+        这是头部内容
       </div>
     ) 
 

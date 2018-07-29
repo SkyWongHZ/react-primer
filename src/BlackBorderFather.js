@@ -1,27 +1,31 @@
 
 import React, { Component } from 'react'
-import BlackBorderContainer from './BlackBorderContainer.js'
-class BlackBorderFather extends Component {
-  constructor() {
-    super()
-    this.state = {
+import BlackBorderContainer from './BlackBorderContainer'
+import BlackBorderHeader from './BlackBorderHeader'
 
-    }
+class BlackBorderFather extends Component {
+  // static childContextTypes = {
+  //   themeColor: PropTypes.string
+  // }
+
+  constructor () {
+    super()
+    this.state = { themeColor: 'red' }
   }
-  render() {
+
+  getChildContext () {
+    return { themeColor: this.state.themeColor }
+  }
+
+  render () {
     return (
       <div>
-        <BlackBorderContainer>
-          <div>
-            <div className='name'>My Name：Lucy</div>
-            <p className='age'>
-              My Age：<span>12</span>
-            </p>
-          </div>
-        </BlackBorderContainer>
+        <BlackBorderContainer />
+        <BlackBorderHeader />
       </div>
-
     )
   }
 }
+
+
 export default BlackBorderFather
