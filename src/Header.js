@@ -5,9 +5,7 @@ class Header extends Component {
 	constructor() {
 		super()
 		console.log('constructor')
-		this.state = {
-
-		}
+		
 	}
 	componentWillMount() {
 		console.log('componentWillMount')
