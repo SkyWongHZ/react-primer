@@ -19,7 +19,10 @@ class Header extends Component {
 	render() {
 		console.log('render')
 		return (
-			<div>react小书</div>
+			<div>
+				<div>react小书</div>
+				<div>单元测试</div>
+			</div>
 		)
 	}
 }
