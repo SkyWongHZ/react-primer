@@ -13,9 +13,6 @@ class Header extends Component {
 	componentDidMount() {
 		console.log('componentDidMount')
 	}
-	componentWillUnmount(){
-		console.log('componentWillUnmount')
-	}
 	render() {
 		console.log('render')
 		return (
