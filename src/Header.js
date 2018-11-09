@@ -8,7 +8,7 @@ class Header extends Component {
 		
 	}
 	componentWillMount() {
-		console.log('componentWillMount')
+		console.log('componentWillMounts')
 	}
 	componentDidMount() {
 		console.log('componentDidMount')
