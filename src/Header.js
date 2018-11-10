@@ -15,6 +15,8 @@ class Header extends Component {
 	}
 	render() {
 		console.log('render')
+		console.log(111);
+		
 		return (
 			<div>
 				<div>react小书</div>
