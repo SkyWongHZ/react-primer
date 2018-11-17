@@ -13,6 +13,9 @@ class Header extends Component {
 	componentDidMount() {
 		console.log('componentDidMount')
 	}
+	componentWillUpdate(){
+		console.log('componentWillUpdate')
+	}
 	render() {
 		console.log('render')
 		console.log(111);
