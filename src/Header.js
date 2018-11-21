@@ -18,7 +18,7 @@ class Header extends Component {
 	}
 	render() {
 		console.log('render')
-		console.log(222);
+		console.log(333);
 		
 		return (
 			<div>
