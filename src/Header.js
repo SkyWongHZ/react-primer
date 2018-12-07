@@ -20,6 +20,7 @@ class Header extends Component {
 		console.log('render')
 		console.log(11111);
 		console.log(22222333);
+		console.log('zzzzz');
 		
 		return (
 			<div>
