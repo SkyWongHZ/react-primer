@@ -16,6 +16,11 @@ class Index extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log('first  page');
+    
+  }
+
   getChildContext= ()=> {
     return { themeColor: this.state.themeColor }
   }
